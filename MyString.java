@@ -15,4 +15,9 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
       length = length + 1;
     }
   }
+  public CharSequence subSequence(int start, int end) {
+    new CharSequence bolg for(int i = start; i < end; i = i + 1) {
+
+    }
+  }
 }
