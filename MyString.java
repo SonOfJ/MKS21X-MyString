@@ -6,4 +6,7 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
       data[i] = CharSequence.charAt(i);
     }
   }
+  public char charAt(int index) {
+    return data[index];
+  }
 }
