@@ -9,4 +9,10 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
   public char charAt(int index) {
     return data[index];
   }
+  public int length() {
+    int length = 0;
+    for(int i = 0; i < data.length; i = i + 1) {
+      length = length + 1;
+    }
+  }
 }
