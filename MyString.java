@@ -1,9 +1,9 @@
 public class MyString implements CharSequence,Comparable<CharSequence>{
   private char[] data;
   public MyString(CharSequence s){
-    data = new char[CharSequence.length]; //Initiates an array with same length as CharSequence
+    data = new char[s.length()]; //Initiates an array with same length as CharSequence
     for(int i = 0; i < data.length; i = i + 1) {
-      data[i] = CharSequence.charAt(i); //Fills in the elements of CharSequence
+      data[i] = s.charAt(i); //Fills in the elements of CharSequence
     }
   }
   public char charAt(int index) {
@@ -16,8 +16,12 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     }
   }
   public CharSequence subSequence(int start, int end) {
-    new CharSequence bolg for(int i = start; i < end; i = i + 1) {
-
+    CharSequence gae; //Declares new CharSequence
+    String bolg = ""; //Declares new String
+    for(int i = start; i < end; i = i + 1) {
+      bolg = bolg + charAt(i); //Builds up the String
     }
+    gae = bolg; //Sets CharSequence equal to String
+    return gae; //Returns the CharSequence
   }
 }
