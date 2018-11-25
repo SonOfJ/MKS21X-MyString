@@ -19,6 +19,9 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     }
   }
   public CharSequence subSequence(int start, int end) {
+    if (start < 0 || end < 0 || end > data.length || start > end) {
+      throw new IndexOutOfBoundsException(); //Start and end can't be less than zero, end can't be bigger than length and start can't be bigger than end
+    }
     CharSequence gae; //Declares new CharSequence
     String bolg = ""; //Declares new String
     for(int i = start; i < end; i = i + 1) {
