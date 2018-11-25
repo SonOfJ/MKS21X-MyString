@@ -24,4 +24,11 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     gae = bolg; //Sets CharSequence equal to String
     return gae; //Returns the CharSequence
   }
+  public String toString() {
+    String print = ""; //Declares new String
+    for(int i = 0; i < data.length; i = i + 1) {
+      print = print + charAt(i); //Builds up the String
+    }
+    return print; //Returns the String
+  }
 }
