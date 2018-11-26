@@ -67,7 +67,7 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
 
     // sole constructor test
     MyString msg = new MyString("droid");
-    System.out.println("MyString msg = new MyString(\"charlotte\")");
+    System.out.println("MyString msg = new MyString(\"droid\")");
 
     // toString()
     System.out.println("msg: " + msg);                                                  // "droid"
@@ -139,10 +139,10 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
 
     // compareTo()
     System.out.println("msg.compareTo(\"droid\"): " + msg.compareTo("droid"));          // 0
-    System.out.println("msg.compareTo(\"bat\"): " + msg.compareTo("bat"));              // 1
-    System.out.println("msg.compareTo(\"seventh\"): " + msg.compareTo("seventh"));      // -1
-    System.out.println("msg.compareTo(\"drank\"): " + msg.compareTo("drank"));          // 1
-    System.out.println("msg.compareTo(\"drunk\"): " + msg.compareTo("drunk"));          // -1
+    System.out.println("msg.compareTo(\"bat\"): " + msg.compareTo("bat"));              // 2
+    System.out.println("msg.compareTo(\"seventh\"): " + msg.compareTo("seventh"));      // -15
+    System.out.println("msg.compareTo(\"drank\"): " + msg.compareTo("drank"));          // 14
+    System.out.println("msg.compareTo(\"drunk\"): " + msg.compareTo("drunk"));          // -6
 
   }
 }
