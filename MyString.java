@@ -143,6 +143,7 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     System.out.println("msg.compareTo(\"seventh\"): " + msg.compareTo("seventh"));      // -15
     System.out.println("msg.compareTo(\"drank\"): " + msg.compareTo("drank"));          // 14
     System.out.println("msg.compareTo(\"drunk\"): " + msg.compareTo("drunk"));          // -6
-
+    System.out.println("msg.compareTo(\"droidian\"): " + msg.compareTo("droidian"));    // -3
+    System.out.println("msg.compareTo(\"droi\"): " + msg.compareTo("droi"));            // 1
   }
 }
