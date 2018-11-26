@@ -17,6 +17,7 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     for(int i = 0; i < data.length; i = i + 1) {
       length = length + 1; //Adds 1 for every element
     }
+    return length;
   }
   public CharSequence subSequence(int start, int end) {
     if (start < 0 || end < 0 || end > data.length || start > end) {
@@ -40,7 +41,7 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
   public int compareTo(CharSequence s) throws ClassCastException {
     if (s == null) {
       throw new NullPointerException();
-      
+
     }
   }
 }
